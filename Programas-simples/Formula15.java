@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class formula15 {
+public class Formula15 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
