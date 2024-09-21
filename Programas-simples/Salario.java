@@ -12,13 +12,6 @@ public class Salario {
         double calculo_salario = valor_horas_trabalhadas * horas_trabalhadas;
 
         System.out.println(" NUMBER = " + numero_do_Funcionario);
-
-
-
-
-
-
-        
-        
+        System.out.printf("SALARY = U$ %.2f%n", calculo_salario);
     }
 }
