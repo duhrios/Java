@@ -1,10 +1,10 @@
-/* Escreva um programa que leia o número de um funcionário, seu     número de horas trabalhadas, o valor que recebe por hora e calcula o salário desse funcionário. A seguir, mostre o número e o salário do funcionário, com duas casas decimais.*/
-
 import java.util.Scanner;
-public class Salario {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+import java.util.InputMismatchException;
 
+public class Main {
+    public static void main(String[] args) {
+    try{
+      Scanner scanner = new Scanner(System.in);
         int numero_do_Funcionario = scanner.nextInt();
         int horas_trabalhadas = scanner.nextInt();
         double valor_horas_trabalhadas = scanner.nextDouble();
@@ -13,5 +13,9 @@ public class Salario {
 
         System.out.println(" NUMBER = " + numero_do_Funcionario);
         System.out.printf("SALARY = U$ %.2f%n", calculo_salario);
-    }
+    }    catch( InputMismatchException e){        System.out.println("Por Favor! \nDigite apenas numeros e se for necessario colocar (,) coloque (.). \n\nObrigado!");
+   }    
+   scanner.close();
+  
+  }
 }
